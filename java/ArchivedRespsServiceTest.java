@@ -1,7 +1,4 @@
-import com.pooyaco.powercard.services.ArchivedRespsMaliService;
-import com.pooyaco.powercard.services.ArchivedRespsService;
-import com.pooyaco.powercard.services.ArchivedRespsSuspectService;
-import com.pooyaco.powercard.services.HsmKeyServices;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,47 +38,16 @@ import java.util.Date;
 @TransactionConfiguration(transactionManager = "transactionManager", defaultRollback = false)
 @Transactional
 @RunWith(SpringJUnit4ClassRunner.class)
-public class ArchivedRespsServiceTest {
+public class ServiceTest {
 
 
-    @Autowired
-    ArchivedRespsService archivedRepsService;
-
-    @Autowired
-    ArchivedRespsSuspectService archivedRepSuspectService;
-
-    @Autowired
-    ArchivedRespsMaliService archivedRespsMaliService;
-
-    @Autowired
-    HsmKeyServices hsmKeyServices;
+    
 
 
     @Test
     public void testFindAll() {
-        archivedRepsService.getAll();
+       Service.getAll();
     }
 
-    @Test
-    public void testFindByReportName() {
-        archivedRespsMaliService.findArchievedList("Report02","1397/06/29","201");
-    }
-
-    @Test
-    public void testEditArchieved() {
-        archivedRespsMaliService.updateArchieved("Report02","1397/06/29","201","253","1397-03-5");
-    }
-
-    @Test
-    public void testHsmServices() {
-        hsmKeyServices.getHsmKey("maskan");
-    }
-
-    @Test
-    public void testMD5Hash(){
-      String password="secret";
-        Md5PasswordEncoder passwordEncoder=new Md5PasswordEncoder();
-        String hashedPassword=passwordEncoder.encodePassword(password,null);
-        System.out.println(hashedPassword);
-    }
+   
 }
