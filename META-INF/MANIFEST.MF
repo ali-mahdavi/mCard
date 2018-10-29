@@ -1,0 +1,5 @@
+Manifest-Version: 2
+Weblogic-Application-Version: 00.00.1351
+Specification-Vendor: Pooya Corporation
+Specification-Title: pooyaco.MaskanCard
+Created-By: Pooya Corporation
