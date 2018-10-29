@@ -3,15 +3,11 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.pooyaco.powercard</groupId>
-    <artifactId>MaskanCard</artifactId>
+ 
+   
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
-    <parent>
-        <groupId>com.pooyaco.gazelle</groupId>
-        <artifactId>Parent</artifactId>
-        <version>1.0-SNAPSHOT</version>
-    </parent>
+  
      <dependencies>
          <!-- https://mvnrepository.com/artifact/org.codehaus.jettison/jettison -->
          <dependency>
@@ -34,36 +30,8 @@
              <version>11.2.0</version>
              <scope>test</scope>
          </dependency>
-         <dependency>
-             <groupId>com.pooyaco.gazelle</groupId>
-             <artifactId>SharedEntity</artifactId>
-             <version>1.0-SNAPSHOT</version>
-             <scope>provided</scope>
-         </dependency>
-         <dependency>
-             <groupId>com.pooyaco.gazelle</groupId>
-             <artifactId>SharedCommon</artifactId>
-             <version>1.0-SNAPSHOT</version>
-             <scope>provided</scope>
-         </dependency>
-         <dependency>
-             <groupId>com.pooyaco.gazelle</groupId>
-             <artifactId>SharedSI</artifactId>
-             <version>1.0-SNAPSHOT</version>
-             <scope>provided</scope>
-         </dependency>
-         <dependency>
-             <groupId>com.pooyaco.gazelle</groupId>
-             <artifactId>SharedBS</artifactId>
-             <version>1.0-SNAPSHOT</version>
-             <scope>provided</scope>
-         </dependency>
-         <dependency>
-             <groupId>com.pooyaco.gazelle</groupId>
-             <artifactId>SharedDA</artifactId>
-             <version>1.0-SNAPSHOT</version>
-             <scope>provided</scope>
-         </dependency>
+        
+              
          <dependency>
              <groupId>commons-beanutils</groupId>
              <artifactId>commons-beanutils</artifactId>
